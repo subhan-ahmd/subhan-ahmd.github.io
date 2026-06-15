@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="I build things that feel right, not just work right.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="google-site-verification" content="6TeHL0w7_cPvBevVhBZcCpTScUwkPnwUoalXj2qAdb0">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://subhan-ahmd.github.io">
+  <meta property="og:title" content="Subhan's Portfolio">
+  <meta property="og:description" content="I build things that feel right, not just work right.">
+  <meta property="og:image" content="https://subhan-ahmd.github.io/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Subhan's Portfolio">
+  <meta name="twitter:description" content="I build things that feel right, not just work right.">
+  <meta name="twitter:image" content="https://subhan-ahmd.github.io/og-image.png">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Subhan's Portfolio">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Fira Code for the pre-Flutter HTML boot loader. Material Icons render from
+       the bundled tree-shaken MaterialIcons font inside the Flutter app, so the
+       Material Icons CDN stylesheet was removed. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://subhan-ahmd.github.io/">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Subhan's Portfolio",
+    "url": "https://subhan-ahmd.github.io",
+    "author": {
+      "@type": "Person",
+      "name": "Subhan Ahmed",
+      "url": "https://subhan-ahmd.github.io",
+      "sameAs": [
+        "https://github.com/subhan-ahmd",
+        "https://linkedin.com/in/subhan-ahmd"
+      ]
+    }
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <!-- Hide system cursor on desktop (custom cursor rendered by Flutter) -->
+  <style>
+    @media (pointer: fine) {
+      *, *::before, *::after { cursor: none !important; }
+    }
+  </style>
+
+  <!-- Terminal loader styles -->
+  <style>
+    body {
+      background: #0A0A0A;
+      margin: 0;
+    }
+    #loading {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: #0A0A0A;
+      padding: 24px;
+      box-sizing: border-box;
+      overflow-y: auto;
+      z-index: 9999;
+      font-family: 'Fira Code', monospace;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      line-height: 1.5;
+    }
+    #loading .line {
+      margin-bottom: 4px;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+    }
+    #loading .kernel { color: rgba(136,136,136,0.6); }
+    #loading .systemd { color: #888888; }
+    #loading .ok { color: rgba(200,255,0,0.7); }
+    #loading .info { color: #888888; }
+    #cursor {
+      width: 8px;
+      height: 16px;
+      background: rgba(136,136,136,0.6);
+      display: inline-block;
+      animation: blink 600ms ease-in-out infinite alternate;
+    }
+    @keyframes blink {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @media (max-width: 480px) {
+      #loading { padding: 12px; font-size: 10px; }
+      #cursor { width: 6px; height: 13px; }
+    }
+    @media (min-width: 481px) and (max-width: 768px) {
+      #loading { padding: 16px; font-size: 11px; }
+      #cursor { width: 7px; height: 14px; }
+    }
+  </style>
+
+  <title>Subhan's Portfolio</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div id="loading"><div id="cursor"></div></div>
+
+  <script>
+    (function() {
+      var lines = [
+        { text: '[    0.000000] Linux version 6.8.0-portfolio (subhan@github)', type: 'kernel' },
+        { text: '[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz root=/dev/sda1', type: 'kernel' },
+        { text: '[    0.012045] BIOS-provided physical RAM map:', type: 'kernel' },
+        { text: '[    0.012045]  BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable', type: 'kernel' },
+        { text: '[    0.024102] ACPI: RSDP 0x00000000000F0490 000014 (v02 VBOX  )', type: 'kernel' },
+        { text: '[    0.024102] ACPI: XSDT 0x000000003FFF0030 00004C (v01 VBOX   VBOXXSDT)', type: 'kernel' },
+        { text: '[    0.036521] DMI: Portfolio Virtual Machine, BIOS VirtualBox 12/01/2006', type: 'kernel' },
+        { text: '[    0.036521] Booting paravirtualized kernel on bare hardware', type: 'kernel' },
+        { text: '[    0.048234] Memory: 16384MB/16384MB available (14339K kernel code, 1498K data)', type: 'kernel' },
+        { text: '[    0.060000] CPU: Flutter Virtual Core @ 3.60GHz (family: 0x6, model: 0x3e)', type: 'kernel' },
+        { text: '[    0.060000] x86/fpu: Supporting XSAVE feature: SSE, AVX, AVX2', type: 'kernel' },
+        { text: '[    0.072000] smpboot: Bringing up secondary CPUs...', type: 'kernel' },
+        { text: '[    0.089000] smpboot: Total of 8 processors activated (57600.00 BogoMIPS)', type: 'kernel' },
+        { text: '[    0.102000] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x34a0', type: 'kernel' },
+        { text: '[    0.115000] PCI: Using configuration type 1 for base access', type: 'kernel' },
+        { text: '[    0.128000] NET: Registered PF_INET protocol family', type: 'kernel' },
+        { text: '[    0.141000] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex', type: 'kernel' },
+        { text: '[    0.154000] EXT4-fs (sda1): mounted filesystem with ordered data mode', type: 'kernel' },
+        { text: '[    0.167000] Mounted root filesystem (ext4) readonly on device sda1', type: 'kernel' },
+        { text: '[    0.180000] systemd[1]: Detected architecture x86-64', type: 'kernel' },
+        { text: '[    0.193000] systemd[1]: Set hostname to <subhan-ahmd.github.io>', type: 'kernel' },
+        { text: '[    0.206000] systemd[1]: Reached target Swap', type: 'kernel' },
+        { text: '[    0.219000] systemd[1]: Listening on udev Kernel Socket', type: 'kernel' },
+        { text: '[    0.232000] systemd[1]: Starting system...', type: 'kernel' },
+        { text: '[  OK  ] Started systemd-journald.service — Journal Service', type: 'systemd' },
+        { text: '[  OK  ] Started systemd-udevd.service — Rule-based Device Manager', type: 'systemd' },
+        { text: '[  OK  ] Started systemd-networkd.service — Network Manager', type: 'systemd' },
+        { text: '[  OK  ] Started systemd-resolved.service — DNS Resolver', type: 'systemd' },
+        { text: '[  OK  ] Started dbus.service — D-Bus System Message Bus', type: 'systemd' },
+        { text: '[  OK  ] Started ssh-agent.service — SSH Agent', type: 'systemd' },
+        { text: '[  OK  ] Started cron.service — Regular Background Scheduler', type: 'systemd' },
+        { text: '[  OK  ] Started node.service — Node.js Runtime', type: 'systemd' },
+        { text: '[  OK  ] Started dart-vm.service — Dart VM Service', type: 'systemd' },
+        { text: '[  OK  ] Started flutter-sdk.service — Flutter SDK Service', type: 'systemd' },
+        { text: '[  OK  ] Started nginx.service — A high performance web server', type: 'systemd' },
+        { text: '[  OK  ] Reached target multi-user.target — Multi-User System', type: 'systemd' },
+        { text: '', type: 'info' },
+        { text: 'subhan-ahmd.github.io login: subhan', type: 'info' },
+        { text: 'Password: ********', type: 'info' },
+        { text: 'Last login: Mon Feb 17 09:32:14 2026 from 192.168.1.1', type: 'info' },
+        { text: '', type: 'info' },
+        { text: 'subhan@subhan-ahmd.github.io:~$ neofetch --off', type: 'info' },
+        { text: 'OS: Ubuntu 24.04.2 LTS x86_64', type: 'info' },
+        { text: 'Host: Portfolio Virtual Machine', type: 'info' },
+        { text: 'Kernel: 6.8.0-portfolio', type: 'info' },
+        { text: 'Uptime: 0 mins', type: 'info' },
+        { text: 'Shell: bash 5.2.21', type: 'info' },
+        { text: 'CPU: Flutter Virtual Core @ 3.60GHz (8)', type: 'info' },
+        { text: 'Memory: 1024MiB / 16384MiB', type: 'info' },
+        { text: '', type: 'info' },
+      ];
+
+      var container = document.getElementById('loading');
+      var cursor = document.getElementById('cursor');
+      var i = 0;
+
+      function addLine() {
+        if (i >= lines.length) return;
+        var line = lines[i];
+        var div = document.createElement('div');
+        div.className = 'line';
+
+        if (line.type === 'systemd') {
+          var okSpan = document.createElement('span');
+          okSpan.className = 'ok';
+          okSpan.textContent = '[  OK  ] ';
+          var textSpan = document.createElement('span');
+          textSpan.className = 'systemd';
+          textSpan.textContent = line.text.replace('[  OK  ] ', '');
+          div.appendChild(okSpan);
+          div.appendChild(textSpan);
+        } else {
+          div.className = 'line ' + line.type;
+          div.textContent = line.text || '\u00A0';
+        }
+
+        container.insertBefore(div, cursor);
+        container.scrollTop = container.scrollHeight;
+        i++;
+        if (i < lines.length) {
+          setTimeout(addLine, 55);
+        } else {
+          // Phase 1 done — show waiting indicator until Flutter takes over
+          var waitDiv = document.createElement('div');
+          waitDiv.className = 'line info';
+          waitDiv.textContent = '\u00A0';
+          container.insertBefore(waitDiv, cursor);
+          var loadingDiv = document.createElement('div');
+          loadingDiv.className = 'line info';
+          loadingDiv.textContent = 'Loading Flutter engine...';
+          container.insertBefore(loadingDiv, cursor);
+          container.scrollTop = container.scrollHeight;
+        }
+      }
+
+      setTimeout(addLine, 55);
+    })();
+  </script>
+
+  <script>
+    // Unregister any previously installed service workers
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for (var r of registrations) { r.unregister(); }
+      });
+    }
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
