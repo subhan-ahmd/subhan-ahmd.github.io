@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://subhan-ahmd.github.io/sitemap.xml
